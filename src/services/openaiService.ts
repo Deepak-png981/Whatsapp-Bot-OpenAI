@@ -2,7 +2,6 @@ import OpenAI from 'openai';
 import { ChatMessage } from '../utils/chatUtils';
 import { handleOpenAIError } from '../utils/errorHandler';
 
-console.log('OpenAI API Key:', process.env.OPENAI_API_KEY); // Add this line for debugging
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY as string,
